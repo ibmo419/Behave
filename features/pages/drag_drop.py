@@ -1,5 +1,5 @@
 from selenium.webdriver import ActionChains
-import allure
+
 from Browser import Browser
 
 link = "https://qavbox.github.io/demo/dragndrop/"
@@ -10,7 +10,7 @@ sliderb = '/html[1]/body[1]/form[1]/fieldset[1]/div[1]/div[5]/input[1]'
 
 class drag_drop(Browser):
 
-    @allure.severity(allure.severity_level.MINOR)
+
     def drag(self):
         source_element = self.driver.find_element_by_id(objectToDrag)
         dest_element = self.driver.find_element_by_id(objectToDrop)
