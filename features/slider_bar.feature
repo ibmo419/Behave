@@ -1,3 +1,4 @@
+@severity=normal
 Feature: Drag and drop slider bar
 
 Scenario: success

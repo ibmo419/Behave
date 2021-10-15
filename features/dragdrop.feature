@@ -1,3 +1,4 @@
+@severity=critical
 Feature: Drag and Drop
 
 Scenario: Drag the rectangle in his target
