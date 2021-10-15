@@ -20,5 +20,5 @@ def step_impl(context):
 
 @then(u'"Droped!" message will be displayed in the target plce')
 def step_impl(context):
-    assert_equal(context.dd.result(), "Dropped")
+    assert_equal(context.dd.result(), "Dropped!")
 
