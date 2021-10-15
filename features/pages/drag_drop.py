@@ -1,4 +1,4 @@
-import nose as nose
+import nose
 from selenium.webdriver import ActionChains
 
 from Browser import Browser
