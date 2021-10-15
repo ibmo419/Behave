@@ -1,3 +1,4 @@
+import nose as nose
 from selenium.webdriver import ActionChains
 
 from Browser import Browser
@@ -7,10 +8,9 @@ objectToDrag = "draggable"
 objectToDrop = "droppable"
 sliderb = '/html[1]/body[1]/form[1]/fieldset[1]/div[1]/div[5]/input[1]'
 
+
 class drag_drop(Browser):
-
-
-
+    @nose.allure.severity(nose.allure.severity_level.CRITICAL)
     def drag(self):
         source_element = self.driver.find_element_by_id(objectToDrag)
         dest_element = self.driver.find_element_by_id(objectToDrop)
@@ -18,7 +18,7 @@ class drag_drop(Browser):
 
     def result(self):
         success_msg = self.driver.find_element_by_id("dropText").text
-        return(success_msg)
+        return success_msg
 
     def setup(self):
         self.driver.get(link)
@@ -29,5 +29,4 @@ class drag_drop(Browser):
 
     def verif_slider(self):
         success_msg = self.driver.find_element_by_id("range").text
-        return(success_msg)
-
+        return success_msg
